@@ -55,13 +55,6 @@ telephony_server = TelephonyServer(
                 prompt_preamble="Have a pleasant conversation about life",
                 generate_responses=True,
             ),
-            # uncomment this to use the speller agent instead
-            # agent_config=SpellerAgentConfig(
-            #     initial_message=BaseMessage(
-            #         text="im a speller agent, say something to me and ill spell it out for you"
-            #     ),
-            #     generate_responses=False,
-            # ),
             twilio_config=TwilioConfig(
                 account_sid=os.environ["TWILIO_ACCOUNT_SID"],
                 auth_token=os.environ["TWILIO_AUTH_TOKEN"],
